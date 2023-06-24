@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>ToDo List</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Laboratorio #1</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../agenda/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ToDo List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saber más</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Eduardo Cruz
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../agenda/pages/profile/index.html">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Preferencias</a></li>
+                <li><a class="dropdown-item" href="../../index.html">Cerrar sesión</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card todo" id="list1">
+              <div class="card-body py-4 px-4 px-md-5">
+                <p class="h1 text-center mt-3 mb-4 pb-3 text-primary text-white">To Do List</p>
+                <div class="pb-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex flex-row align-items-center">
+                        <input type="text" class="form-control form-control-lg" id="taskInput" placeholder="Nueva Tarea">                        
+                        <select id="priority" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option selected>Prioridad</option>
+                          <option value="1">Baja</option>
+                          <option value="2">Media</option>
+                          <option value="3">Alta</option>
+                        </select>
+                        <div>
+                          <button type="button" class="btn btn-primary" onclick="newTask()" id="save">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <ul class="bg-transparent list-group" id="list">
+                  <ul class="list-group list-group-horizontal rounded-0 bg-transparent" id="Teminar árbol de vidaul">
+                    <li class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox" checked/>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-2 py-1 flex-grow-1 border-0 bg-transparent">
+                      <p class="lead fw-normal mb-0 text-white" id="Teminar árbol de vida">Teminar árbol de vida</p>
+                    </li>
+                    <div class="d-flex">
+                      <a href="#!" class="edit" onclick="editTask('Teminar árbol de vida')" id="Teminar árbol de vidaa">
+                          <img src="../../images/edit.png" alt="" width="30px">
+                      </a>
+                      <a href="#!" class="delete" onclick="deleteTask('Teminar árbol de vida')" id="Teminar árbol de vidad">
+                          <img src="../../images/delete.png" alt="" width="30px">
+                      </a>
+                    </div>
+                  </ul>
+                  <ul class="list-group list-group-horizontal rounded-0 bg-transparent" id="Teminar mapa conceptualul">
+                    <li class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox"/>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-2 py-1 flex-grow-1 border-0 bg-transparent">
+                      <p class="lead fw-normal mb-0 text-white" id="Teminar mapa conceptual">Teminar mapa conceptual</p>
+                    </li>
+                    <div class="d-flex">
+                      <a href="#!" class="edit" onclick="editTask('Teminar mapa conceptual')" id="Teminar mapa conceptuala">
+                          <img src="../../images/edit.png" alt="" width="30px">
+                      </a>
+                      <a href="#!" class="delete" onclick="deleteTask('Teminar mapa conceptual')" id="Teminar mapa conceptuald">
+                          <img src="../../images/delete.png" alt="" width="30px">
+                      </a>
+                    </div>
+                  </ul>
+                  <ul class="list-group list-group-horizontal rounded-0 bg-transparent" id="Investigar racionalizaciónul">
+                    <li class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+                      <div class="form-check">
+                        <input class="form-check-input me-0" type="checkbox"/>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-2 py-1 flex-grow-1 border-0 bg-transparent" >
+                      <p class="lead fw-normal mb-0 text-white" id="Investigar racionalización">Investigar racionalización</p>
+                    </li>
+                    <div class="d-flex">
+                      <a href="#!" class="edit" onclick="editTask('Investigar racionalización')" id="Investigar racionalizacióna">
+                          <img src="../../images/edit.png" alt="" width="30px">
+                      </a>
+                      <a href="#!" class="delete" onclick="deleteTask('Investigar racionalización')" id="Investigar racionalizaciónd">
+                          <img src="../../images/delete.png" alt="" width="30px">
+                      </a>
+                    </div>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+</body>
+</html>

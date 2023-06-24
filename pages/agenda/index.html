@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Agenda Web</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Laboratorio #1</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../toDoList/index.html">ToDo List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Saber más</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Eduardo Cruz
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/profile/index.html">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Preferencias</a></li>
+                  <li><a class="dropdown-item" href="../../index.html">Cerrar sesión</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="container-sm contacts">
+        <p class="fw-bold text-uppercase mb-4 contactsTitle">Contactos</p>
+        <div class="div">
+          <div class="div1">
+            <ul class="nav nav-tabs navContacts" id="nav-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link linkTxt active" aria-current="page" href="#" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkTxt" href="#" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Favoritos</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="nav nav-pills justify-content-end">
+              <li class="nav-item">
+                <a href="./pages/addContact/index.html" class="nav-link active" aria-current="page">Agregar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="row" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="col-xl-6 mb-4 tab-pane fade show active">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/alberto.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Alberto Juarez
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0 txt">albertojuarez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Desarrollador backend</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Speed-One</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Lambda Core</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/daniel.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Daniel Hernández
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0">danielhernandez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Desarrollador frontend</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Healthy Mouths</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">ChatGPT</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/david.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">David Martínez</p>
+                    <p class="mb-0">davidmartinez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Analista de datos</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">James Webb</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Ariane-5</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/juan.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Juan Pérez</p>
+                    <p class="mb-0">juanperez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Ingeniero de datos</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Spitzer</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Falcon Heavy</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/pedro.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Pedro Sánchez
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0">pedrosanchez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Científico de datos</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Hubble</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Artemis-1</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/alejandro.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Alejandro López
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0">alejandrolopez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Ingeniero Machine Learning</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Subaru</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Falcon-9</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="row">
+        <div class="col-xl-6 mb-4 tab-pane fade show active">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/alberto.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Alberto Juarez
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0 txt">albertojuarez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Desarrollador backend</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Speed-One</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Lambda Core</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/daniel.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Daniel Hernández
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0">danielhernandez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Desarrollador frontend</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Healthy Mouths</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">ChatGPT</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/pedro.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Pedro Sánchez
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0">pedrosanchez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Científico de datos</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Hubble</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Artemis-1</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../../images/alejandro.png"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Alejandro López
+                      <img src="../../images/favorite.png" alt="" style="width: 20px;">
+                    </p>
+                    <p class="mb-0">alejandrolopez@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 p-2 d-flex justify-content-around">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="col-md-30 text-white">
+                    <div class="card-body p-10">
+                      <div class="row pt-1">
+                        <div class="col-30 mb-3">
+                          <h6>Especialidad</h6>
+                          <p class="txt">Ingeniero Machine Learning</p>
+                        </div>
+                      </div>
+                      <h6>Proyectos</h6>
+                      <hr class="mt-2 mb-40">
+                      <div class="row pt-1">
+                        <div class="col-6">
+                          <h6>Más reciente</h6>
+                          <p class="txt">Subaru</p>
+                        </div>
+                        <div class="col-6">
+                          <h6>Más visto</h6>
+                          <p class="txt">Falcon-9</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

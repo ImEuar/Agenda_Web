@@ -1,0 +1,126 @@
+body{
+    background-color: #212529;
+}
+.loginDiv{
+    background-color: #2b3035;
+}
+.newDiv{
+    margin: 30px;
+}
+.profileSpecsDiv{
+    background-color: #212529;
+    background-image: linear-gradient(-360deg, #353b41, #676f77);
+}
+.txt{
+    color: rgb(196, 196, 196);
+}
+.txt1{
+    margin: 0;
+}
+.linkTxt{
+    color: white;
+}
+.linkTxt:hover{
+    color: rgb(196, 196, 196);
+}
+.contacts{
+    background-color: #2b3035;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 40px 20px 40px;
+}
+.contactsTitle{
+    color: white;
+    font-size: 40px;
+}
+.navContacts{
+    margin-bottom: 20px;
+}
+.card, card-body{
+    background-color: #353b41;
+    color: white;
+}
+.accordion-item{
+    color: white
+}
+.card-footer{
+    background-color: #676f77;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    width: 100%;
+}
+
+.todo{
+    background-color: #2b3035;
+    border-radius: 20px;
+}
+.edit{
+    margin-right: 10px;
+}
+.delete{
+    margin-right: 10px;
+}
+.aviso{
+    background-color: #585858;
+}
+.swal-text{
+    font-family: sans-serif;
+    color:white;
+    text-align: center;
+}
+.swal-title{
+    font-family:sans-serif;
+    color:white;
+}
+.swal-button{
+    background-color: #777777;
+    border:1px solid #777777;
+    text-shadow: none;
+    font-family: sans-serif;
+}
+.swal-button:defined{
+    border:none;
+    box-shadow: none;
+}
+.list-group-horizontal{
+    background-color: #54585f !important;
+    padding: 5px;
+    margin-bottom: 10px !important;
+    border-radius: 15px !important;
+}
+ul{
+    margin-bottom: 10px !important;
+}
+ul[data-priority="1"] {
+    background-color: #558362 !important;
+    border-radius: 15px !important;
+    padding: 5px;
+}
+  
+ul[data-priority="2"] {
+    background-color: #79815c !important;
+    border-radius: 15px !important;
+    padding: 5px;
+}
+  
+ul[data-priority="3"] {
+    background-color: #7a5353 !important;
+    border-radius: 15px !important;
+    padding: 5px;
+}
+  
+.form-check{
+    margin-left: 10px;
+}
+.form-select-sm{
+    width: 200px;
+    margin: 20px;
+}
+.navbar-nav{
+    margin-bottom: 0 !important;
+}
